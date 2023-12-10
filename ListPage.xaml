@@ -11,6 +11,7 @@
             <Editor.Behaviors>
                 <local:ValidationBehaviour />
             </Editor.Behaviors>        </Editor>
+        <Picker x:Name="ShopPicker" Title="Enter Shop Name"/>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -23,8 +24,7 @@
                 Clicked="OnDeleteButtonClicked"/>
         </Grid>
 
-        <ListView x:Name="listView"
-                  Margin="20">
+        <ListView x:Name="listView" Margin="20">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Detail="{Binding Description}" />
